@@ -1,0 +1,12 @@
+[Defines]
+  DEC_SPECIFICATION = 0x0001001B
+  PACKAGE_NAME      = SimplePkg
+  PACKAGE_GUID      = 3959441f-073f-42a3-8a98-ce350bd49d42
+  PACKAGE_VERSION   = 1.0
+
+[Includes]
+  Include
+
+[Protocols]
+  ## Include/Protocol/SimpleProtocol.h
+  gEfiSimpleProtocolGuid = { 0xfd0a26e9, 0x2e22, 0x4e3c, { 0x95, 0x0c, 0x1b, 0xdc, 0x2f, 0x4d, 0xc7, 0xc1 } }

@@ -1,0 +1,22 @@
+[Defines]
+  INF_VERSION                = 0x0001001B
+  BASE_NAME                  = SimpleDriver
+  FILE_GUID                  = b3f5b7a5-606f-40b6-87f8-9a180517770c
+  MODULE_TYPE                = UEFI_DRIVER
+  ENTRY_POINT                = SimpleDriverEntryPoint
+
+[Sources]
+  SimpleDriver.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ## Including this package since the protocol is organized inside it
+  SimplePkg/SimplePkg.dec
+
+[LibraryClasses]
+  UefiLib
+  UefiDriverEntryPoint
+  UefiBootServicesTableLib
+
+[Protocols]
+  gEfiSimpleProtocolGuid

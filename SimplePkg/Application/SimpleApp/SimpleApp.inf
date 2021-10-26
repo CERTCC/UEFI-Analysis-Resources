@@ -1,0 +1,21 @@
+[Defines]
+  INF_VERSION                = 0x0001001B
+  BASE_NAME                  = SimpleApp
+  FILE_GUID                  = 1fba761e-cca3-47c7-a57d-a9c024b47390
+  MODULE_TYPE                = UEFI_APPLICATION
+  ENTRY_POINT                = SimpleAppEntryPoint
+
+[Sources]
+  SimpleApp.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  SimplePkg/SimplePkg.dec
+
+[LibraryClasses]
+  UefiLib
+  UefiApplicationEntryPoint
+  UefiBootServicesTableLib
+  
+[Protocols]
+  gEfiSimpleProtocolGuid
